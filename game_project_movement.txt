@@ -41,7 +41,7 @@ public class player : MonoBehaviour
         if (wDown)
             transform.position += moveVec * speed * 0.3f * Time.deltaTime;
         else
-            transform.position += moveVec * speed * Time.deltaTime;
+            transform.position += moveVec * speed * 2 * Time.deltaTime;
 
         anim.SetBool("isRun", moveVec != Vector3.zero);
 
